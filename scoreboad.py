@@ -1,14 +1,18 @@
-from PyQt5 import QtWidgets, QtGui, QtCore
-from PyQt5.QtWidgets import QMainWindow, QApplication, QDialog
-from PyQt5.uic import loadUi
+from PySide6 import QtWidgets, QtGui, QtCore
+from PySide6.QtWidgets import QMainWindow, QApplication, QDialog
+from PySide6 import QtUiTools
+from PySide6.QtGui import QFont
+from qt_material import apply_stylesheet
 
 from filewriter import FileWriter
+from gui_files.scoreboard import Ui_MainWindow
 
 
-class GUIScoreBoard(QMainWindow):
+class GUIScoreBoard(QMainWindow, Ui_MainWindow):
     def __init__(self, root_path):
         super(GUIScoreBoard, self).__init__()
-        loadUi('/home/xabier/Scoreboard/Scoreboard.ui', self)
+        # Load Ui file
+        self.setupUi(self)
         self._local_points = 0
         self._visiting_points = 0
         self._set = 1
@@ -61,6 +65,7 @@ class GUIScoreBoard(QMainWindow):
         self._local_points = 0
         self._visiting_points = 0
         self._set += 1
+
         self.scoreboard.change_set(self._set)
         self.scoreboard.set_local_value(self._local_points)
         self.scoreboard.set_visiting_value(self._visiting_points)
@@ -74,6 +79,15 @@ if __name__ == '__main__':
 
     root_path = '/home/xabier/Scoreboard'
     app = QApplication(sys.argv)
+    app.setStyle('Fusion')
+    apply_stylesheet(app, theme='dark_teal.xml', extra={'primaryColor': '#ffffff'})
+    app.setFont(QFont('Robot', 10))
+    app.setStyleSheet(app.styleSheet() + """
+    QLineEdit {
+            color: white; /*set text color*/
+    }
+    """
+    )
     window = GUIScoreBoard(root_path)
     window.show()
     app.exec_()
