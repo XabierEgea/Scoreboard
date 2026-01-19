@@ -1,0 +1,11 @@
+class LightColors:
+    BACKGROUND = "#F5F5F5"
+    SURFACE = "#FFFFFF"
+
+    TEXT_PRIMARY = "#111111"
+    TEXT_SECONDARY = "#555555"
+    TEXT_DISABLED = "#999999"
+
+    PRIMARY = "#3F51B5"
+    PRIMARY_HOVER = "#5C6BC0"
+    BORDER = "#DDDDDD"

@@ -1,0 +1,30 @@
+{
+  "menu": {
+    "options": "Opciones",
+    "mode": "Modo",
+    "style": "Estilo",
+    "dark": "Oscuro",
+    "light": "Claro",
+    "modern": "Moderno",
+    "classic": "Clásico",
+    "colors": "Colores"
+  },
+  "scoreboard": {
+    "local": "LOCAL",
+    "visitor": "VISITANTE",
+    "set": "SET",
+    "add": "+1",
+    "subtract": "-1",
+    "next_set": "SIGUIENTE SET",
+    "reset": "REINICIAR"
+  },
+  "color_picker": {
+    "title": "Configurar Colores",
+    "local_color": "Color Local:",
+    "visitor_color": "Color Visitante:",
+    "select_local": "Selecciona color Local",
+    "select_visitor": "Selecciona color Visitante",
+    "apply": "Aplicar",
+    "cancel": "Cancelar"
+  }
+}

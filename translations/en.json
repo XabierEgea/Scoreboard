@@ -1,0 +1,30 @@
+{
+  "menu": {
+    "options": "Options",
+    "mode": "Mode",
+    "style": "Style",
+    "dark": "Dark",
+    "light": "Light",
+    "modern": "Modern",
+    "classic": "Classic",
+    "colors": "Colors"
+  },
+  "scoreboard": {
+    "local": "LOCAL",
+    "visitor": "VISITOR",
+    "set": "SET",
+    "add": "+1",
+    "subtract": "-1",
+    "next_set": "NEXT SET",
+    "reset": "RESET"
+  },
+  "color_picker": {
+    "title": "Configure Colors",
+    "local_color": "Local Color:",
+    "visitor_color": "Visitor Color:",
+    "select_local": "Select Local Color",
+    "select_visitor": "Select Visitor Color",
+    "apply": "Apply",
+    "cancel": "Cancel"
+  }
+}

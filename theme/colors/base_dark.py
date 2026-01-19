@@ -1,0 +1,6 @@
+class BaseDark:
+    BACKGROUND = "#121212"
+    SURFACE = "#1E1E1E"
+    TEXT_PRIMARY = "#FFFFFF"
+    TEXT_SECONDARY = "#B0B0B0"
+    BORDER = "#2A2A2A"

@@ -1,0 +1,6 @@
+class BaseLight:
+    BACKGROUND = "#F5F5F5"
+    SURFACE = "#FFFFFF"
+    TEXT_PRIMARY = "#111111"
+    TEXT_SECONDARY = "#555555"
+    BORDER = "#DDDDDD"
