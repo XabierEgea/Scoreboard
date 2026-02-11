@@ -16,6 +16,7 @@
     "add": "+1",
     "subtract": "-1",
     "next_set": "NEXT SET",
+    "previous_set": "PREVIOUS SET",
     "reset": "RESET"
   },
   "color_picker": {

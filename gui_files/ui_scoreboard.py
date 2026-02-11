@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoreboardanRakp.ui'
+## Form generated from reading UI file 'scoreboardOYsjMe.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -55,6 +55,21 @@ class Ui_MainWindow(object):
 
         self.Local_layout.addItem(self.verticalSpacer)
 
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.local_team_name_label = QLabel(self.centralwidget)
+        self.local_team_name_label.setObjectName(u"local_team_name_label")
+
+        self.horizontalLayout.addWidget(self.local_team_name_label)
+
+        self.local_team_name_input = QLineEdit(self.centralwidget)
+        self.local_team_name_input.setObjectName(u"local_team_name_input")
+
+        self.horizontalLayout.addWidget(self.local_team_name_input)
+
+
+        self.Local_layout.addLayout(self.horizontalLayout)
+
         self.add_local = QPushButton(self.centralwidget)
         self.add_local.setObjectName(u"add_local")
 
@@ -96,6 +111,11 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.next_set)
 
+        self.previous_set = QPushButton(self.centralwidget)
+        self.previous_set.setObjectName(u"previous_set")
+
+        self.verticalLayout_2.addWidget(self.previous_set)
+
 
         self.horizontalLayout_3.addLayout(self.verticalLayout_2)
 
@@ -110,6 +130,21 @@ class Ui_MainWindow(object):
         self.verticalSpacer_2 = QSpacerItem(20, 30, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Maximum)
 
         self.verticalLayout.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.visitor_team_name_label = QLabel(self.centralwidget)
+        self.visitor_team_name_label.setObjectName(u"visitor_team_name_label")
+
+        self.horizontalLayout_4.addWidget(self.visitor_team_name_label)
+
+        self.visitor_team_name_input = QLineEdit(self.centralwidget)
+        self.visitor_team_name_input.setObjectName(u"visitor_team_name_input")
+
+        self.horizontalLayout_4.addWidget(self.visitor_team_name_input)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout_4)
 
         self.add_visitor = QPushButton(self.centralwidget)
         self.add_visitor.setObjectName(u"add_visitor")
@@ -177,18 +212,21 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Scoreboard", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.actionDark.setText(QCoreApplication.translate("MainWindow", u"Dark", None))
         self.actionLight.setText(QCoreApplication.translate("MainWindow", u"Light", None))
         self.actionModern.setText(QCoreApplication.translate("MainWindow", u"Modern", None))
         self.actionClassic.setText(QCoreApplication.translate("MainWindow", u"Classic", None))
         self.actionColors.setText(QCoreApplication.translate("MainWindow", u"Colors", None))
         self.local_label.setText(QCoreApplication.translate("MainWindow", u"LOCAL", None))
+        self.local_team_name_label.setText(QCoreApplication.translate("MainWindow", u"Team name", None))
         self.add_local.setText(QCoreApplication.translate("MainWindow", u"+1", None))
         self.subtract_local.setText(QCoreApplication.translate("MainWindow", u"-1", None))
         self.set_label.setText(QCoreApplication.translate("MainWindow", u"SET", None))
-        self.next_set.setText(QCoreApplication.translate("MainWindow", u"NEXT SET", None))
+        self.next_set.setText(QCoreApplication.translate("MainWindow", u"NEX SET", None))
+        self.previous_set.setText(QCoreApplication.translate("MainWindow", u"PREVIOUS SET", None))
         self.visitor_label.setText(QCoreApplication.translate("MainWindow", u"VISITOR", None))
+        self.visitor_team_name_label.setText(QCoreApplication.translate("MainWindow", u"Team name", None))
         self.add_visitor.setText(QCoreApplication.translate("MainWindow", u"+1", None))
         self.subtrac_visitor.setText(QCoreApplication.translate("MainWindow", u"-1", None))
         self.reset.setText(QCoreApplication.translate("MainWindow", u"RESET", None))

@@ -46,6 +46,7 @@ class Ui_ScoreboardWrapper(Ui_MainWindow):
         
         self.set_label.setText(language_manager.get("scoreboard.set", "SET"))
         self.next_set.setText(language_manager.get("scoreboard.next_set", "NEXT SET"))
+        self.previous_set.setText(language_manager.get("scoreboard.previous_set", "PREVIOUS SET"))
         
         self.visitor_label.setText(language_manager.get("scoreboard.visitor", "VISITOR"))
         self.add_visitor.setText(language_manager.get("scoreboard.add", "+1"))

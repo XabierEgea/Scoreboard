@@ -1,0 +1,67 @@
+body {
+  background: transparent;
+  font-family: "Inter", sans-serif;
+}
+
+#scoreboard {
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-size: 32px;
+}
+
+#scoreboard th {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+}
+
+#scoreboard td {
+  padding: 14px 24px;
+  text-align: center;
+}
+
+#scoreboard .name {
+  text-align: left;
+  font-weight: 700;
+}
+
+.team.local {
+  color: var(--local-color, #ff4444);
+}
+
+.team.visitor {
+  color: var(--visitor-color, #4488ff);
+}
+
+.score-updated {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+
+/* CELDAS GENERALES */
+#scoreboard td {
+  padding: 16px 24px;
+  text-align: center;
+  background: var(--cell-bg);
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* FILA LOCAL */
+#scoreboard .team.local td {
+  background: var(--local-color);
+  color: #000;
+}
+
+/* FILA VISITOR */
+#scoreboard .team.visitor td {
+  background: var(--visitor-color);
+  color: #000;
+}

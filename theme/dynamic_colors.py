@@ -84,13 +84,19 @@ def _darken_color(hex_color, amount):
     return color.name()
 
 
-def update_colors_from_dialog(ui, colors_dict):
+def update_colors_from_dialog(ui, colors_dict, file_writer=None):
     """Update colors from dialog and apply changes.
     
     Args:
         ui: UI object to update
         colors_dict (dict): Dictionary with 'local' and 'visitor' colors
+        file_writer: FileWriter instance to persist colors (optional)
     """
     ThemeState.local_color = colors_dict["local"]
     ThemeState.visitor_color = colors_dict["visitor"]
     apply_dynamic_colors(ui)
+    
+    # Update the JSON state file if FileWriter is provided
+    if file_writer:
+        file_writer.set_local_color(ThemeState.local_color)
+        file_writer.set_visitor_color(ThemeState.visitor_color)

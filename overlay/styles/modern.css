@@ -1,0 +1,76 @@
+body {
+  background: transparent;
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  padding: 16px 24px;
+  backdrop-filter: blur(10px);
+  gap: 24px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+}
+
+.team.local {
+  flex-direction: row;
+}
+
+.team.visitor {
+  flex-direction: row-reverse;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.score {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.score-updated {
+  animation: scoreUpdate 0.3s ease-out;
+}
+
+@keyframes scoreUpdate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.set {
+  margin: 0 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+}
+
+.set span {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 8px;
+}

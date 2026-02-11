@@ -72,6 +72,7 @@ def _setup_roles(ui):
 
     # Set button
     ui.next_set.setProperty("role", "set")
+    ui.previous_set.setProperty("role", "set")
 
     # Reset button
     ui.reset.setProperty("role", "danger")
@@ -130,6 +131,7 @@ def _apply_button_sizes(ui):
     _apply(ui.subtrac_visitor, ButtonSizes.VISITOR)
 
     _apply(ui.next_set, ButtonSizes.SET)
+    _apply(ui.previous_set, ButtonSizes.SET)
     _apply(ui.reset, ButtonSizes.RESET)
 
     apply_theme(QApplication.instance(), ThemeState.mode, ThemeState.style)
@@ -143,9 +145,11 @@ def _apply_text_desing(ui):
     """
     apply_text_role(ui.local_label, TextRole.TITLE)
     apply_text_role(ui.visitor_label, TextRole.TITLE)
+    apply_text_role(ui.set_label, TextRole.TITLE)
 
     apply_text_role(ui.local_points_label, TextRole.SMALL)
     apply_text_role(ui.visitor_points_label, TextRole.SMALL)
+    apply_text_role(ui.set_number_label, TextRole.SMALL)
 
 
 def _apply(button, config):
