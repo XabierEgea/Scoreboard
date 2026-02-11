@@ -1,0 +1,21 @@
+{
+  "local": {
+    "name": "Oberena",
+    "color": "#ff0000",
+    "sets": [
+      10,
+      0,
+      0
+    ]
+  },
+  "visitor": {
+    "name": "Lagun artea",
+    "color": "#1E88E5",
+    "sets": [
+      6,
+      0,
+      0
+    ]
+  },
+  "style": "tennis"
+}

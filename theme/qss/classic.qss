@@ -1,0 +1,21 @@
+QPushButton {
+    border-radius: 2px;
+    padding: 4px 10px;
+}
+
+/* mismos roles, otro diseño */
+QPushButton[role="local"] {
+    background-color: #2E5A88;
+}
+
+QPushButton[role="visitor"] {
+    background-color: #6A3E99;
+}
+
+QPushButton[role="set"] {
+    background-color: #2E7D32;
+}
+
+QPushButton[role="danger"] {
+    background-color: #B71C1C;
+}

@@ -1,0 +1,39 @@
+QPushButton {
+    background-color: {surface};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+/* LOCAL */
+QPushButton[role="local"] {
+    background-color: {local};
+}
+QPushButton[role="local"]:hover {
+    background-color: {local_hover};
+}
+
+/* VISITOR */
+QPushButton[role="visitor"] {
+    background-color: {visitor};
+}
+QPushButton[role="visitor"]:hover {
+    background-color: {visitor_hover};
+}
+
+/* SET */
+QPushButton[role="set"] {
+    background-color: {set};
+}
+QPushButton[role="set"]:hover {
+    background-color: {set_hover};
+}
+
+/* RESET */
+QPushButton[role="danger"] {
+    background-color: {danger};
+}
+QPushButton[role="danger"]:hover {
+    background-color: {danger_hover};
+}

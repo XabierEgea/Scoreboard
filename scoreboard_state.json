@@ -1,0 +1,21 @@
+{
+  "local": {
+    "name": "LOCAL",
+    "color": "#E53935",
+    "sets": [
+      4,
+      0,
+      0
+    ]
+  },
+  "visitor": {
+    "name": "VISITOR",
+    "color": "#1E88E5",
+    "sets": [
+      0,
+      0,
+      0
+    ]
+  },
+  "style": "modern"
+}

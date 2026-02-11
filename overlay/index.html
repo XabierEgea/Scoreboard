@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scoreboard</title>
+  <link id="theme-style" rel="stylesheet" href="styles/pelota.css" />
+</head>
+<body>
+  <table id="scoreboard">
+    <tr>
+      <th>Team</th>
+      <th>Set 1</th>
+      <th>Set 2</th>
+      <th>Set 3</th>
+    </tr>
+    <tr class="team local">
+      <td class="name" id="local-name">LOCAL</td>
+      <td class="score" id="local-set1">0</td>
+      <td class="score" id="local-set2">0</td>
+      <td class="score" id="local-set3">0</td>
+    </tr>
+    <tr class="team visitor">
+      <td class="name" id="visitor-name">VISITOR</td>
+      <td class="score" id="visitor-set1">0</td>
+      <td class="score" id="visitor-set2">0</td>
+      <td class="score" id="visitor-set3">0</td>
+    </tr>
+  </table>
+  <script src="js/overlay.js"></script>
+</body>
+</html>
